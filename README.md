@@ -69,3 +69,18 @@ set git config
 git config --global user.email "your email"
 git config --global user.name "your name"
 ~~~
+
+# Installing MySQL on Ubuntu: Update Package Repository & Install MySQL
+~~~
+sudo apt update
+~~~
+~~~
+sudo apt upgrade
+~~~
+~~~
+sudo apt install mysql-server
+~~~
+~~~
+mysql --version
+~~~
+

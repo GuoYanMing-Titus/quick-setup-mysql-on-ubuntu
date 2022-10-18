@@ -83,4 +83,39 @@ sudo apt install mysql-server
 ~~~
 mysql --version
 ~~~
+~~~
+sudo service mysql status
+~~~
+
+# 進入mysql設定root密碼
+~~~
+sudo mysql
+~~~
+~~~
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';
+~~~
+~~~
+exit
+~~~
+
+
+# 設定安全性
+~~~
+sudo mysql_secure_installation
+~~~
+1.（VALIDATE PASSWORD PLUGIN）。除非想要強制執行嚴格的密碼規則，不然這並不是真正需要的。
+Securing the MySQL server deployment.
+Connecting to MySQL using a blank password.
+VALIDATE PASSWORD PLUGIN can be used to test passwords
+and improve security. It checks the strength of password
+and allows the users to set only those passwords which are
+secure enough. Would you like to setup VALIDATE PASSWORD plugin?
+Press y|Y for Yes, any other key for No: 
+不要設定的話, 直接按Enter
+
+2. 接下來如果是乾淨的MySQL建議全部輸入 Y.
+
+
+
+
 

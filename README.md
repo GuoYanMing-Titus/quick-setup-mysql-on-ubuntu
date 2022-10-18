@@ -46,3 +46,26 @@ network:
 ~~~
 sudo reboot
 ~~~
+# create pub key for github
+Create key
+~~~
+ssh-keygen -t ed25519 -C "your_email@example.com"
+~~~
+Start the ssh-agent in the background.
+~~~
+eval "$(ssh-agent -s)"
+~~~
+add key to ssh-agent
+~~~
+ssh-add ~/.ssh/id_ed25519
+~~~
+cat your key and copy it.
+add it to github ssh key.
+~~~
+cat ~/.ssh/id_ed25519.pub
+~~~
+set git config
+~~~
+git config --global user.email "your email"
+git config --global user.name "your name"
+~~~

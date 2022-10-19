@@ -97,7 +97,7 @@ sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '1qaz@WSX';
 ~~~
 ~~~
-exit
+exit;
 ~~~
 
 

@@ -13,10 +13,12 @@ add
 set nu
 set ai
 set cursorline
-set smartindent
 set bg=light
-set tabstop=2
-set shiftwidth=2
+setlocal list
+set listchars=tab:>~,trail:.
+set ts=4
+set expandtab
+set smartindent
 ~~~
 2. change hostname
 ~~~

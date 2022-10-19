@@ -67,6 +67,8 @@ cat ~/.ssh/id_ed25519.pub
 set git config
 ~~~
 git config --global user.email "your email"
+~~~
+~~~
 git config --global user.name "your name"
 ~~~
 
@@ -92,7 +94,7 @@ sudo service mysql status
 sudo mysql
 ~~~
 ~~~
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '1qaz@WSX';
 ~~~
 ~~~
 exit

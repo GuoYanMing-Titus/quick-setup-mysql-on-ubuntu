@@ -105,48 +105,34 @@ exit;
 ~~~
 sudo mysql_secure_installation
 ~~~
-1.（VALIDATE PASSWORD PLUGIN）。除非想要強制執行嚴格的密碼規則，不然這並不是真正需要的。
-Securing the MySQL server deployment.
-Connecting to MySQL using a blank password.
-VALIDATE PASSWORD PLUGIN can be used to test passwords
-and improve security. It checks the strength of password
-and allows the users to set only those passwords which are
-secure enough. Would you like to setup VALIDATE PASSWORD plugin?
-Press y|Y for Yes, any other key for No: 
+
 不要設定的話, 直接按Enter
 
+1.（VALIDATE PASSWORD PLUGIN）。除非想要強制執行嚴格的密碼規則，不然這並不是真正需要的。
+Securing the MySQL server deployment. Connecting to MySQL using a blank password. VALIDATE PASSWORD PLUGIN can be used to test passwords and improve security. It checks the strength of password and allows the users to set only those passwords which are secure enough. Would you like to setup VALIDATE PASSWORD plugin? 
+
+Press y|Y for Yes, any other key for No:
+
 2. Using existing password for root.
+
 Change the password for root ? ((Press y|Y for Yes, any other key for No) : 
 
-3. By default, a MySQL installation has an anonymous user,
-allowing anyone to log into MySQL without having to have
-a user account created for them. This is intended only for
-testing, and to make the installation go a bit smoother.
-You should remove them before moving into a production
-environment.
+3. By default, a MySQL installation has an anonymous user, allowing anyone to log into MySQL without having to have a user account created for them. This is intended only for testing, and to make the installation go a bit smoother. You should remove them before moving into a production environment.
 
 Remove anonymous users? (Press y|Y for Yes, any other key for No) :
 
-4. Normally, root should only be allowed to connect from
-'localhost'. This ensures that someone cannot guess at
-the root password from the network.
+4. Normally, root should only be allowed to connect from 'localhost'. This ensures that someone cannot guess at the root password from the network.
 
 Disallow root login remotely? (Press y|Y for Yes, any other key for No) :
 
-5. By default, MySQL comes with a database named 'test' that
-anyone can access. This is also intended only for testing,
-and should be removed before moving into a production
-environment.
+5. By default, MySQL comes with a database named 'test' that anyone can access. This is also intended only for testing, and should be removed before moving into a production environment.
 
 Remove test database and access to it? (Press y|Y for Yes, any other key for No) : 
 
-6. Reloading the privilege tables will ensure that all changes
-made so far will take effect immediately.
+6. Reloading the privilege tables will ensure that all changes made so far will take effect immediately.
 
 Reload privilege tables now? (Press y|Y for Yes, any other key for No) :
 
 7. All done!
-
-
 
 
